@@ -5,4 +5,6 @@ RUN apk update && \
     apk add autossh && \
     rm -r /var/cache/
 
+EXPOSE 80
+
 ENTRYPOINT [ "autossh"]
